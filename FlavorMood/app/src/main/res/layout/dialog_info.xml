@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modal / Dialog Layout for the "How It Works" info screen -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:padding="28dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🍽️ How Flavor Mood Works"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryDark"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginBottom="16dp" />
+
+    <!-- What is this app? -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is this app?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryDark"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flavor Mood is a creative food recommendation calculator. Instead of crunching numbers, it matches your emotional state to a perfect food experience."
+        android:textSize="14sp"
+        android:textColor="@color/textSecondary"
+        android:lineSpacingMultiplier="1.5"
+        android:layout_marginBottom="16dp" />
+
+    <!-- How to use it? -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How to use it:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryDark"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1️⃣  Pick your current mood from the four options.\n\n2️⃣  Select what time of day it is.\n\n3️⃣  Tap ✨ Find My Flavor — and discover what food matches your energy right now!"
+        android:textSize="14sp"
+        android:textColor="@color/textSecondary"
+        android:lineSpacingMultiplier="1.5"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Fun note -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="There are 16 unique combinations — try them all! 🎉"
+        android:textSize="13sp"
+        android:textColor="@color/accent"
+        android:textStyle="italic"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Close button -->
+    <Button
+        android:id="@+id/btn_close_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Got it! Let's eat 🍴"
+        android:textSize="16sp"
+        android:backgroundTint="@color/primaryDark"
+        android:textColor="@color/white" />
+
+</LinearLayout>

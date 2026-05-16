@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFAF5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🍴 Log a Meal"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#7B3F00"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="What did you eat?" android:textStyle="bold" android:textColor="#7B3F00"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/et_meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Chicken Shawarma"
+            android:inputType="textCapSentences"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Meal Type" android:textStyle="bold" android:textColor="#7B3F00"
+            android:layout_marginBottom="6dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton android:id="@+id/rb_breakfast" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Breakfast" android:textSize="11sp"/>
+            <RadioButton android:id="@+id/rb_lunch" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Lunch" android:checked="true" android:textSize="11sp"/>
+            <RadioButton android:id="@+id/rb_dinner" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Dinner" android:textSize="11sp"/>
+            <RadioButton android:id="@+id/rb_snack" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Snack" android:textSize="11sp"/>
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="How was it?" android:textStyle="bold" android:textColor="#7B3F00"
+            android:layout_marginBottom="6dp"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="1"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Notes (optional)" android:textStyle="bold" android:textColor="#7B3F00"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/et_notes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Any thoughts about this meal..."
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="✅ Save Entry"
+            android:backgroundTint="#7B3F00"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Cancel"
+            android:backgroundTint="#9E7B5A"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

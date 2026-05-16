@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FDFAF5"
+    android:padding="16dp">
+
+    <!-- Welcome message -->
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Foodie! 👋"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#7B3F00"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your food journal"
+        android:textSize="14sp"
+        android:textColor="#9E7B5A"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Buttons row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="➕ Add Meal"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#7B3F00"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="⚙️ Settings"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#F4A228"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_info"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="ℹ️ Info"
+            android:backgroundTint="#9E7B5A"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <!-- Empty state -->
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No meals logged yet!\n\nTap ➕ Add Meal to get started 🍽️"
+        android:textSize="16sp"
+        android:textColor="#9E7B5A"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:lineSpacingMultiplier="1.6"/>
+
+    <!-- Scrollable entries list -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_entries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+</LinearLayout>

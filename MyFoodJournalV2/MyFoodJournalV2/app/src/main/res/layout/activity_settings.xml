@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFAF5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Settings"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#7B3F00"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your preferences are saved on your device"
+            android:textSize="13sp"
+            android:textColor="#9E7B5A"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Your Name" android:textStyle="bold" android:textColor="#7B3F00"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Sara"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Dietary Preference" android:textStyle="bold" android:textColor="#7B3F00"
+            android:layout_marginBottom="6dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_diet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton android:id="@+id/rb_none" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="🍖 No Restriction"
+                android:checked="true" android:textColor="#7B3F00"/>
+            <RadioButton android:id="@+id/rb_halal" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="☪️ Halal"
+                android:textColor="#7B3F00"/>
+            <RadioButton android:id="@+id/rb_vegetarian" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="🥦 Vegetarian"
+                android:textColor="#7B3F00"/>
+            <RadioButton android:id="@+id/rb_vegan" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="🌱 Vegan"
+                android:textColor="#7B3F00"/>
+        </RadioGroup>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="🔔 Daily Meal Reminders"
+                android:textStyle="bold" android:textColor="#7B3F00"/>
+
+            <Switch android:id="@+id/sw_notif" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:checked="true"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="💾 Save Settings"
+            android:backgroundTint="#7B3F00"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Back"
+            android:backgroundTint="#9E7B5A"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

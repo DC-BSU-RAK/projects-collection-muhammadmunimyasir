@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryDark">#2D4A22</color>       <!-- Deep forest green -->
+    <color name="primaryLight">#E8F5E0</color>      <!-- Soft mint green -->
+    <color name="accent">#F4A228</color>            <!-- Warm golden orange -->
+    <color name="background">#FAFAF5</color>        <!-- Off-white cream -->
+    <color name="white">#FFFFFF</color>
+    <color name="textSecondary">#6B7B5E</color>     <!-- Muted olive -->
+</resources>
